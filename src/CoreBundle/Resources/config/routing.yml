@@ -1,0 +1,19 @@
+core_homepage:
+    path:     /
+    defaults: { _controller: CoreBundle:Default:index }
+
+core_news:
+        path:     /news
+        defaults: { _controller: CoreBundle:Default:news }
+
+core_contact:
+        path:     /contact
+        defaults: { _controller: CoreBundle:Default:contact }
+
+core_items:
+        path:     /items
+        defaults: { _controller: CoreBundle:Default:items }
+
+core_wiki:
+        path:     /wiki
+        defaults: { _controller: CoreBundle:Default:wiki }
