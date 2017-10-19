@@ -8,8 +8,7 @@
         },
         "classmap": [
             "app/AppKernel.php",
-            "app/AppCache.php",
-            "src/CoreBundle/CoreBundle.php"
+            "app/AppCache.php"
         ]
     },
     "autoload-dev": {
