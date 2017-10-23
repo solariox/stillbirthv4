@@ -1,0 +1,54 @@
+/*
+###################FONT#############
+####################################
+*/
+@font-face {
+  font-family: "Upheaval";
+  src: url("../font/upheavtt.ttf") format("truetype");
+}
+
+body { background-image: url('../img/background.jpg');
+background-size:contain;
+background-repeat:no-repeat;
+background-position:center;
+background-size: 100%;
+color : white ;
+text-align:center
+}
+
+.button{
+  font-family: "Upheaval";
+  font-size: 2em;
+  height:100px;
+  background-image: url("../img/bandal.svg");
+  background-size:contain;
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size: 100%;
+  line-height:85px;
+  text-align:center;
+  color:black
+}
+
+
+.logo{
+  margin-top: 10px;
+  height:280px;
+
+}
+.isaac_pic{
+  height:400px;
+}
+
+.floating {
+  -webkit-animation: mover 1s infinite  alternate;
+  animation: mover 1s infinite  alternate;
+}
+@-webkit-keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-20px); }
+}
+@keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-20px); }
+}

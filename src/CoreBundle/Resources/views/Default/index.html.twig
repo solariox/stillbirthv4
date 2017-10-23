@@ -6,63 +6,36 @@
 
   <title>Stillbirth</title>
   <link rel="stylesheet" href="">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <style>
-    
-        body { background-color : black;
-                color : white ;
-                text-align:center}
-        .button{
-                height:100px;
-                background-image: url("../img/bandal.svg");
-                background-size:contain;
-                background-repeat:no-repeat;
-                background-position:center;
-                line-height:85px;
-                text-align:center;
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="{{ asset('css/index.css') }}">
 
-                }
-        .logo{
-                height:300px;
-                
-        }
-        .isaac_pic{
-                height:500px;
-        }
-        .hallo{
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#494949+0,000000+54 */
-background: #494949; /* Old browsers */
-background: -moz-radial-gradient(center, ellipse cover,  #494949 0%, #000000 54%); /* FF3.6-15 */
-background: -webkit-radial-gradient(center, ellipse cover,  #494949 0%,#000000 54%); /* Chrome10-25,Safari5.1-6 */
-background: radial-gradient(ellipse at center,  #494949 0%,#000000 54%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#494949', endColorstr='#000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-
-        }
-
-
-    </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
 
 </head>
 
 <body>
 
+  <div class="floating">
+    <img  class="logo" src="{{ asset('img/stillbirthlogo.png') }}" alt="logo Stillbirth" />
+  </div>
+  <br/>
 
-        <img class="logo" src="{{ asset('img/stillbirthlogo.png') }}" alt="logo Stillbirth" />
-        <br/>
+  <div class="hallo">
+    <img id="isaac" class="isaac_pic" src="{{ asset('img/isaac1.png') }}" alt="Image isaac" />
+  </div>
 
-        <div class="hallo">
-                <img class="isaac_pic" src="{{ asset('img/isaac1.png') }}" alt="Image isaac" />
-        </div>
+  <nav class="container">
 
-        <nav class="container">
+    <div class="button col-lg-5">Items</div>
+    <div class="button col-lg-5">News</div>
+    <div class="button col-lg-5">Wiki</div>
+    <div class="button col-lg-5">Contact</div>
 
-                <div class="button col-lg-3">Items</div>
-                <div class="button col-lg-3">News</div>
-                <div class="button col-lg-3">Wiki</div>
-                <div class="button col-lg-3">Contact</div>
+  </nav>
 
-        </nav>
-        
+
 </body>
+<script src="{{ asset('js/index.js') }}"></script>
+
 </html>
