@@ -1,2 +1,16 @@
+{% extends "CoreBundle::Default/layout.html.twig" %}
+
+{% block content %}
 <h1>Hello Stillbirth</h1>
 <h3>Some of our items</h3>
+<table>
+    <tr>
+        <td><img  class="item" src="{{ asset('img/sprite/babyblender.png') }}" alt="logo Stillbirth" /></td>
+        <td><img  class="item" src="{{ asset('img/sprite/blindpact.png') }}" alt="logo Stillbirth" /></td>
+        <td><img  class="item" src="{{ asset('img/sprite/cricketscollar.png') }}" alt="logo Stillbirth" /></td>
+        <td><img  class="item" src="{{ asset('img/sprite/diamondickycard.png') }}" alt="logo Stillbirth" /></td>
+        <td><img  class="item" src="{{ asset('img/sprite/firstblood.png') }}" alt="logo Stillbirth" /></td>
+    </tr>
+
+</table>
+{% endblock %}

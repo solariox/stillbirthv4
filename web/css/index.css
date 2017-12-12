@@ -7,11 +7,10 @@
   src: url("../font/upheavtt.ttf") format("truetype");
 }
 
-body { background-image: url('../img/background.jpg');
-background-size:contain;
+body { background-image: url('../img/background_index.jpg');
+background-size:cover;
 background-repeat:no-repeat;
 background-position:center;
-background-size: 100%;
 color : white ;
 text-align:center
 }
@@ -33,11 +32,11 @@ text-align:center
 
 .logo{
   margin-top: 10px;
-  height:280px;
+  height:20vh;
 
 }
 .isaac_pic{
-  height:400px;
+  height:50vh;
 }
 
 .floating {

@@ -1,0 +1,49 @@
+<!doctype html>
+
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+
+  <title>Stillbirth</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="{{ asset('css/layout.css') }}">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+
+</head>
+
+<body>
+
+<nav class="topnav" id="myTopnav">
+  <a href="#home"> <img  class="logo" src="{{ asset('img/stillbirthlogo.png') }}" alt="logo Stillbirth" /> </a>
+  <div class="scroll">
+    <a class="scroll_mini" href="#news">News</a>
+    <a  class="scroll_mini" href="#contact">Contact</a>
+    <a  class="scroll_mini" href="#about">Items</a>
+    <a  class="scroll_mini" href="#about">Wiki</a>
+  </div>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</nav>
+
+
+
+  {% block content %}{% endblock %}
+
+
+</body>
+
+<script src="{{ asset('js/index.js') }}"></script>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+</html>
