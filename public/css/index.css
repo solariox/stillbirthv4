@@ -7,7 +7,9 @@
   src: url("../font/upheavtt.ttf") format("truetype");
 }
 
-body { background-image: url('../img/background_index.jpg');
+body { 
+  height: 100vh;
+  background-image: url('../img/background_index.jpg');
 background-size:cover;
 background-repeat:no-repeat;
 background-position:center;
@@ -15,9 +17,6 @@ color : white ;
 text-align:center
 }
 
-html{
-min-height: 100vh;
-}
 
 .button{
   font-family: "Upheaval";
@@ -40,7 +39,7 @@ min-height: 100vh;
 }
 
 .isaac_pic{
-  height:55vh;
+  height:40vh;
 
 }
 
