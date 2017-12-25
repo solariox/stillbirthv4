@@ -1,0 +1,13 @@
+@import "navigation.css";
+
+@font-face {
+    font-family: "Upheaval";
+    src: url("../font/upheavtt.ttf") format("truetype");
+}
+
+body { background-image: url('../img/background.png');
+       background-position:center;
+       background-size: 100%;
+       color : white ;
+       
+}

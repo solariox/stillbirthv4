@@ -1,0 +1,25 @@
+.main_content{
+  margin-left: 25%;
+  margin-right:25%;
+  padding: 60px 10px 10px;
+
+}
+
+.itembox {
+  list-style: none;
+}
+
+.itemlist{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.item{
+  margin: 3px;
+  width: 70px;
+  height:70px;
+}
+.item:hover{
+  background-color: white;
+}
