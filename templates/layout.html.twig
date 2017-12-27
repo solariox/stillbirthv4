@@ -17,33 +17,33 @@
 
   <nav class="menu">
 
-    <a href="#home"> <img  class="logo" src="{{ asset('img/stillbirthlogo.png') }}" alt="logo Stillbirth" /> </a>
+    <a href="{{ path('home') }}"> <img  class="logo" src="{{ asset('img/stillbirthlogo.png') }}" alt="logo Stillbirth" /> </a>
     <a class="toggle-nav" href="#">&#9776;</a>
     <ul class=" active scroll">
       <li>
-        <a class="scroll_mini" href="#news">
-          News 
+        <a class="scroll_mini" href="{{ path('news') }}">
+          News
         </a>
-        <span class="separator">&nbsp;</span>  
-      </li>
-       
-      <li>
-        <a class="scroll_mini" href="#contact">
-          Contact 
-        </a>
-        <span class="separator">&nbsp;</span>  
+        <span class="separator">&nbsp;</span>
       </li>
 
       <li>
-        <a class="scroll_mini" href="#items">
-          Items 
+        <a class="scroll_mini" href="{{ path('contact') }}">
+          Contact
         </a>
-        <span class="separator">&nbsp;</span>  
+        <span class="separator">&nbsp;</span>
       </li>
 
       <li>
-        <a class="scroll_mini" href="#wiki">
-          Wiki   
+        <a class="scroll_mini" href="{{ path('items') }}">
+          Items
+        </a>
+        <span class="separator">&nbsp;</span>
+      </li>
+
+      <li>
+        <a class="scroll_mini" href="{{ path('wiki') }}">
+          Wiki
         </a>
         <span class="separator">&nbsp;</span>
       </li>

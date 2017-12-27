@@ -5,6 +5,7 @@ namespace App\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\Routing\Annotation\Route;
 use App\Entity\Item;
+use App\Entity\News;
 
 /**
  * Description of IndexController
@@ -14,7 +15,7 @@ use App\Entity\Item;
 class MainController extends Controller
 {
     /**
-    * @Route("/")
+    * @Route("/", name="home")
     */
     public function indexAction()
     {
@@ -22,15 +23,17 @@ class MainController extends Controller
     }
 
     /**
-    * @Route("/news")
+    * @Route("/news", name="news")
     */
     public function newsAction()
     {
-        return $this->render('news.html.twig');
+      $em = $this->getDoctrine()->getManager();
+      $news =  $em->getRepository(News::class)->findAll();
+      return $this->render('news.html.twig',array('news'=>$news));
     }
 
     /**
-    * @Route("/contact")
+    * @Route("/contact", name="contact")
     */
     public function contactAction()
     {
@@ -38,7 +41,7 @@ class MainController extends Controller
     }
 
     /**
-    * @Route("/items")
+    * @Route("/items", name="items")
     */
     public function itemsAction()
     {
@@ -48,7 +51,7 @@ class MainController extends Controller
     }
 
     /**
-    * @Route("/wiki")
+    * @Route("/wiki", name="wiki")
     */
     public function wikiAction()
     {
