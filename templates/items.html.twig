@@ -8,23 +8,11 @@
   <h3> items in array : <h3>
     <ul class="itemlist" >
       {%for item in itemsList%}
-      <li class="itembox">{{item.name}} {{item.description}} </li>
+      <li class="itembox">{{item.name}} {{item.description}} <img src="img/sprite/{{item.img}}"> </li>
 
       {%endfor%}
     </ul>
 
-    <ul class="itemlist" >
-      <li class="itembox"> <img  class="item " src="{{ asset('img/sprite/babyblender.png') }}" alt="logo Stillbirth"/>  </li>
-      <li class="itembox"> <img  class="item " src="{{ asset('img/sprite/blindpact.png') }}" alt="logo Stillbirth"/></li>
-      <li class="itembox"> <img  class="item" src="{{ asset('img/sprite/cricketscollar.png') }}" alt="logo Stillbirth"/></li>
-      <li class="itembox"> <img  class="item" src="{{ asset('img/sprite/diamondickycard.png') }}" alt="logo Stillbirth"/></li>
-      <li class="itembox"> <img  class="item" src="{{ asset('img/sprite/firstblood.png') }}" alt="logo Stillbirth"/></li>
-      <li class="itembox"> <img  class="item " src="{{ asset('img/sprite/babyblender.png') }}" alt="logo Stillbirth"/></li>
-      <li class="itembox"> <img  class="item" src="{{ asset('img/sprite/blindpact.png') }}" alt="logo Stillbirth"/></li>
-      <li class="itembox"> <img  class="item" src="{{ asset('img/sprite/cricketscollar.png') }}" alt="logo Stillbirth"/></li>
-      <li class="itembox"> <img  class="item" src="{{ asset('img/sprite/diamondickycard.png') }}" alt="logo Stillbirth"/></li>
-      <li class="itembox"> <img  class="item" src="{{ asset('img/sprite/firstblood.png') }}" alt="logo Stillbirth"/></li>
-    </ul>
 
   </div>
 
