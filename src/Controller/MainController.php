@@ -57,4 +57,12 @@ class MainController extends Controller
     {
         return $this->render('Wiki/main.html.twig');
     }
+
+    /**
+    * @Route("/wiki/boss", name="wiki/boss")
+    */
+    public function wikiBossAction()
+    {
+        return $this->render('Wiki/boss.html.twig');
+    }
 }
