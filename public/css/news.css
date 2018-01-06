@@ -1,0 +1,18 @@
+.main_content{
+  margin-left: 25%;
+  margin-right:25%;
+  padding: 60px 10px 10px;
+}
+.news{
+  text-align: center;
+
+  border-image-source: url("../img/bandal.svg");
+  border-image-slice: 70; /* Permet de selectionner la partie qui se répéte */
+  border-image-width: 30px;
+
+
+
+  background-size: 100%;
+  padding: 30px;
+
+}

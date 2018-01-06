@@ -7,6 +7,10 @@ use Symfony\Component\Routing\Annotation\Route;
 use App\Entity\Item;
 use App\Entity\News;
 
+use Symfony\Component\Serializer\Serializer;
+use Symfony\Component\Serializer\Encoder\JsonEncoder;
+use Symfony\Component\Serializer\Normalizer\ObjectNormalizer;
+
 /**
  * Description of IndexController
  *
@@ -27,9 +31,11 @@ class MainController extends Controller
     */
     public function newsAction()
     {
+
       $em = $this->getDoctrine()->getManager();
       $news =  $em->getRepository(News::class)->findAll();
       return $this->render('news.html.twig',array('news'=>$news));
+
     }
 
     /**
@@ -47,7 +53,10 @@ class MainController extends Controller
     {
       $em = $this->getDoctrine()->getManager();
       $itemsList =  $em->getRepository(Item::class)->findAll();
-      return $this->render('items.html.twig',array('itemsList'=>$itemsList));
+      $serializer = new Serializer(array(new ObjectNormalizer()), array(new JsonEncoder() ) ); #Créé un serialiser en lui donnant les services permettant de normaliser le json
+      $itemJson = $serializer->serialize($itemsList,'json');
+
+      return $this->render('items.html.twig',array('itemsList'=>$itemsList, 'itemJson'=>$itemJson));
     }
 
     /**

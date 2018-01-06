@@ -1,15 +1,18 @@
 {% extends "layout.html.twig" %}
 
 {% block content %}
-<link rel="stylesheet" type="text/css" href="{{ asset('css/items.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('css/news.css') }}">
+
 <div class="main_content">
   <h1>Hello Stillbirth</h1>
   <h3>This is our news</h3>
   {%for new in news %}
-
+  <div class="news">
     <h1>{{new.title}}</h1>
     <p>{{new.content}}</p>
     <small>post the : {{new.date|date('d-m-Y')}}</small>
+  </div>
+
 
   {%endfor%}
 

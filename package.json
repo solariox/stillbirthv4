@@ -1,0 +1,21 @@
+{
+    "devDependencies": {
+        "@symfony/webpack-encore": "^0.17.1",
+        "autoprefixer": "^7.2.4",
+        "node-sass": "^4.7.2",
+        "postcss-loader": "^2.0.9",
+        "sass-loader": "^6.0.6"
+    },
+    "license": "UNLICENSED",
+    "private": true,
+    "scripts": {
+        "dev-server": "encore dev-server",
+        "dev": "encore dev",
+        "watch": "encore dev --watch",
+        "build": "encore production"
+    },
+    "browserslist": [ "last 2 versions", "ios >= 8" ]
+
+
+
+}

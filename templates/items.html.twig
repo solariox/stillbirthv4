@@ -4,16 +4,53 @@
 <link rel="stylesheet" type="text/css" href="{{ asset('css/items.css') }}">
 <div class="main_content">
   <h1>Hello Stillbirth</h1>
+  <div class="modal">
+
+  </div>
   <h3>Some of our items</h3>
   <h3> items in array : <h3>
     <ul class="itemlist" >
       {%for item in itemsList%}
-      <li class="itembox">{{item.name}} {{item.description}} <img src="img/sprite/{{item.img}}"> </li>
-
+      <li class="itembox" id="item-{{item.id}}"> <img src="img/sprite/{{item.img}}"> </li>
       {%endfor%}
     </ul>
-
-
   </div>
 
-  {% endblock %}
+  <div class="box_description">
+    <p>
+
+    </p>
+  </div>
+
+
+  <script>
+  var itemList = {{itemJson|raw}};
+
+  $('.itembox').mouseenter(function(e){
+    var id =  $(this).attr('id');
+    itemList.forEach(function(item){
+      if ("item-"+item.id == id){
+        console.log(item.name);
+        $(".box_description").text(item.name);
+      };
+    });
+  }).mouseleave(function(e){
+    $(".box_description").text("");
+
+  });
+
+
+  /*
+  var itemList = {{itemJson|raw}};
+  $('.itembox').click(function(e){
+  var id =  e.target.id;
+  itemList.forEach(function(item){
+  console.log(item);
+  if ("item-"+item.id == id){
+  console.log(item);
+}
+});
+}); */
+</script>
+
+{% endblock %}
