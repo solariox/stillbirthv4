@@ -4,15 +4,15 @@
   padding: 60px 10px 10px;
 }
 .news{
+  margin: auto;
   text-align: center;
-
-  border-image-source: url("../img/bandal.svg");
-  border-image-slice: 70; /* Permet de selectionner la partie qui se répéte */
-  border-image-width: 30px;
-
-
-
-  background-size: 100%;
-  padding: 30px;
-
+  background-image: url('../img/modal.svg');
+  background-repeat:no-repeat;
+  background-color: transparent;
+  background-size: 100% 100%;
+  display:flex;
+  flex-direction: row;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 50px;
+  border:none;/*Bootstrap modal got native border*/
 }
