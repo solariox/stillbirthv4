@@ -1,3 +1,12 @@
+
+.section{
+  margin-left:25%;
+  margin-right: 25%;
+  width:50%;
+  position: relative;
+}
+
+
 noselect {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -8,16 +17,14 @@ noselect {
 }
 
 
-
 #wrap {
   /* fixed width, centered in viewport */
   width: 980px;
-  left: -490px;
-  margin-left: 50%;
+  max-width: 90%;
   position: relative;
+
 }
 #showcase {
-  width: 100%;
   height: 460px;
   /* background: #16235e;
   /*  background: -moz-linear-gradient(top, #16235e 0%, #020223 100%); /* FF3.6+ */
@@ -38,6 +45,12 @@ noselect {
   cursor: pointer;
   width: 20vh;
   height: auto;
+  image-rendering: -moz-crisp-edges;          /* Firefox                        */
+  image-rendering: -o-crisp-edges;            /* Opera                          */
+  image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+  image-rendering: pixelated; /* Chrome */
+  image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+  -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
 }
 #item-title {
   color: #F31414;
@@ -76,4 +89,3 @@ noselect {
   border: solid 2px rgba(0, 0, 0, 0.6);
   box-shadow: none;
 }
-aby Blen

@@ -1,0 +1,59 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js run encore dev --watch$
+
+PATH: 
+  C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\Program\Intel\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;D:\Program\Intel\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\Program\Git\cmd;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\ProgramData\ComposerSetup\bin;D:\Program\QuickTime\QTSystem\;D:\Program\IsoBuster;C:\Program Files\nodejs\;C:\Program Files (x86)\Yarn\bin\;D:\Program\wamp64\bin\php\php7.1.9;C:\Users\Solario\AppData\Local\atom\bin;C:\Users\Solario\AppData\Roaming\Composer\vendor\bin;C:\Users\Solario\AppData\Local\Microsoft\WindowsApps;C:\Users\Solario\AppData\Local\GitHubDesktop\bin;C:\Users\Solario\AppData\Roaming\npm;D:\Program\Microsoft VS Code\bin;C:\Users\Solario\AppData\Local\Yarn\bin
+
+Yarn version: 
+  1.5.1
+
+Node version: 
+  8.9.4
+
+Platform: 
+  win32 x64
+
+npm manifest: 
+  {
+      "devDependencies": {
+          "@symfony/webpack-encore": "^0.17.1",
+          "autoprefixer": "^7.2.4",
+          "node-sass": "^4.7.2",
+          "postcss-loader": "^2.0.9",
+          "sass-loader": "^6.0.6"
+      },
+      "license": "UNLICENSED",
+      "private": true,
+      "scripts": {
+          "dev-server": "encore dev-server",
+          "dev": "encore dev",
+          "watch": "encore dev --watch",
+          "build": "encore production"
+      },
+      "browserslist": [ "last 2 versions", "ios >= 8" ]
+  
+  
+  
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: Command failed.
+  Exit code: 1
+  Command: C:\WINDOWS\system32\cmd.exe
+  Arguments: /d /s /c D:\Program\wamp64\www\Stillbirth\node_modules\.bin\encore dev --watch$
+  Directory: D:\Program\wamp64\www\Stillbirth
+  Output:
+  
+      at ProcessTermError.MessageError (C:\Program Files (x86)\Yarn\lib\cli.js:186:110)
+      at new ProcessTermError (C:\Program Files (x86)\Yarn\lib\cli.js:226:113)
+      at ChildProcess.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:30281:17)
+      at emitTwo (events.js:126:13)
+      at ChildProcess.emit (events.js:214:7)
+      at maybeClose (internal/child_process.js:925:16)
+      at Process.ChildProcess._handle.onexit (internal/child_process.js:209:5)

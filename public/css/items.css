@@ -1,9 +1,6 @@
 .main_content{
-    font-family: "Upheaval";
   margin-left: 25%;
   margin-right:25%;
-  padding: 60px 10px 10px;
-
 }
 
 .itembox {
@@ -21,11 +18,21 @@
   width: 70px;
   height:70px;
 }
+.pixel{
+  image-rendering: -moz-crisp-edges;          /* Firefox                        */
+  image-rendering: -o-crisp-edges;            /* Opera                          */
+  image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+  image-rendering: pixelated; /* Chrome */
+  image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+  -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
+}
 .itembox img{
   margin: 3px;
   position: center;
   width: 70px;
   height:70px;
+
+
 }
 .itembox:hover{
   background-color: #778899;

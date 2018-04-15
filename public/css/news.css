@@ -1,7 +1,6 @@
 .main_content{
-  margin-left: 25%;
-  margin-right:25%;
-  padding: 60px 10px 10px;
+  margin-left: 15%;
+  margin-right:15%;
 }
 .news{
   margin: auto;
@@ -15,4 +14,10 @@
   margin: 15% auto; /* 15% from the top and centered */
   padding: 50px;
   border:none;/*Bootstrap modal got native border*/
+}
+
+@media only screen and ( max-width:970px){
+
+
+  
 }

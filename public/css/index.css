@@ -14,7 +14,8 @@ body {
   background-repeat:no-repeat;
   background-position:center;
   color : white ;
-  text-align:center
+  text-align:center;
+
 }
 
 
@@ -39,11 +40,11 @@ a{
 .logo{
   margin-top: 50px;
   height:20vh;
+  max-width: 100%;
 }
 
 .isaac_pic{
   height:40vh;
-
 }
 
 .floating {
@@ -62,5 +63,8 @@ a{
 @media screen and (max-width: 576px) {
   .isaac_pic {
     display: none;
+  }
+  body{
+    min-height: 100vh;
   }
 }

@@ -3,196 +3,149 @@
 # Navigation ####
 ##################
 */
+.header{
+    height: 100px;
+    padding-top:10px;
+    z-index: 1000;
+}
 
-.menu{
-    display:flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    text-shadow:0px 1px 0px rgba(0,0,0,0.5);
-    transition:color linear 0.15s;
+.logo img{
+padding : 0 25px;
+float: left;
+width: auto;
+height:100px;
 
 }
 
-.logo{
-    padding:0;
-    width: auto;
-    height:100px;
-}
-
-
- .separator{
+.separator{
     height: 100%;
     min-width:1px;
-
     background-color: black;
 } 
 
 
-.scroll{
-    
-padding-left: 100px;
-padding-right: 100px;
-font-family: "Upheaval";
-font-size: 6em;
-height:100px;
-justify-content: space-around;
-
-background-image: url("../img/bandal.svg");
-background-size:contain;
-background-repeat:no-repeat;
-background-position:center;
-background-size: 100%;
-line-height:85px;
-
-text-align:center;
-color:black
-}
-
-/*----- Toggle Button -----*/
-.toggle-nav {
-    display:none;
-    color:white
-}
-
-/*----- Menu -----*/
-@media screen and (min-width: 860px) {
-    .menu {
-        width:100%;
-        padding:10px 18px;
-        box-shadow:0px 1px 1px rgba(0,0,0,0.15);
-        border-radius:3px;
-    }
-
-}
-
-.menu ul {
-    display:inline-block;
-}
-
-.menu>ul>li>a{
-    color:black;
-    margin-right:30px;
-
-}
-/* Margin have to be the same here */
-.menu li {
-    margin:0px 40px 0px 0px;
-    float:left;
-    list-style:none;
-    font-size:17px;
-}
-
-.menu li:last-child {
-    margin-right:0px;
-}
-
-.menu a {
-    text-shadow:0px 1px 0px rgba(0,0,0,0.5);
-    transition:color linear 0.15s;
-}
-
-.menu a:hover, .menu .current-item a {
-    text-decoration:none;
-    color:#66a992;
-}
-
-
-
-/*----- Responsive -----*/
-@media screen and (max-width: 1150px) {
-    .wrap {
-        width:90%;
-    }
-}
-
-
-
-@media screen and (max-width: 860px) {
-    .menu {
-        position:relative;
-        display:flex;
-        flex-direction: column;
-    }
-
-    .logo{
-      max-width: 50%;
-      height: auto;
-    }
-
-    .scroll{
-        background-image :none;
-    }
-
-
-    .scroll_mini{
-
+.menu{
+    padding-left: 50px;
+    height:100px;
+    float: left;
     font-family: "Upheaval";
-    font-size: 2em;
-    height:50px;
+    justify-content: space-around;
+    text-align:center;
+
     background-image: url("../img/bandal.svg");
     background-size:contain;
     background-repeat:no-repeat;
     background-position:center;
     background-size: 100%;
 
+    font-size: 1em;
+    line-height:80px;
+
+
     text-align:center;
     color:black
 }
 
-    .menu ul.active {
-        display:none;
-    }
-
-    .menu ul {
-        width:100%;
-        position:absolute;
-        top:120%;
-        left:0px;
-        padding:10px 18px;
-        box-shadow:0px 1px 1px rgba(0,0,0,0.15);
-        border-radius:3px;
-    }
-
-    .menu ul:after {
-        width:0px;
-        height:0px;
-        position:absolute;
-        top:0%;
-        left:22px;
-        content:'';
-        transform:translate(0%, -100%);
-        border-left:7px solid transparent;
-        border-right:7px solid transparent;
-        border-bottom:7px solid #303030;
-    }
-
-    .menu li {
-        margin:5px 0px 5px 0px;
-        float:none;
-        display:block;
-    }
-
-    .menu a {
-        display:block;
-    }
-
-    .toggle-nav {
-        padding:20px;
-        float:right;
-        display:inline-block;
-        box-shadow:0px 1px 1px rgba(0,0,0,0.15);
-        border-radius:3px;
-
-        text-shadow:0px 1px 0px rgba(0,0,0,0.5);
-        color:white;
-        font-size:20px;
-        transition:color linear 0.15s;
-    }
-
-    .toggle-nav:hover, .toggle-nav.active {
-        text-decoration:none;
-        color:white;
-    }
+.menu>a{
+    color:black;
+    margin-right:30px;
+    margin-left:30px;
+    transition:color linear 0.15s;
 
 }
+
+.menu a:hover {
+    text-decoration:none;
+    color:#55565c;
+}
+
+
+
+.main_content{
+    font-family: "Upheaval";
+    padding-top: 150px;
+}
+
+
+/* Responsive*/
+@media only screen and ( max-width:970px){
+    .logo img{max-width: 75%;}
+    .separator{display:none;}
+    .site-container{overflow: hidden;}
+    .site-container, .site-pusher{height: 100%}
+    .site-pusher{
+        transition-duration: 0.3s;
+        transform:  translateX(0px);
+        height: 100%;
+        
+    }
+
+    .main_content{
+        position: absolute;
+        -webkit-overflow-scrolling: touch;
+        top: 100px; /* La hauteur du header */
+        right: 0;
+        left: 0;
+        bottom: 0;
+        padding-top: 0;
+        -webkit-overflow-scrolling: touch; /* Inertie sur iOS */
+    }
+
+    .header{
+        position:static;
+    }
+
+    .header__icon {
+        position: relative;
+        display: block;
+        float: left;
+        width: 50px;
+        height: 66px;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+    .header__icon:after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 1rem;
+        height: 0;
+        top: 25px;
+        left: 20px;
+        box-shadow: 0 10px 0 1px white, 0 16px 0 1px white, 0 22px 0 1px white; 
+        }
+
+    .menu{
+        position: fixed;
+        top:0;
+
+        background-color: darkgray;
+        width:250px;
+        background-image: none;
+
+        padding-left: 0;
+        transform: translateX(-250px); 
+        transition-duration: 0.3s;
+    }
+
+    .menu a{
+        display:block;
+        height: 80px;
+        line-height: 80px;
+
+
+        background-image: url("../img/bandal.svg");
+        background-size:contain;
+        background-repeat:no-repeat;
+        background-position:center;
+        
+    }
+
+    .with--sidebar .site-pusher {
+        transform: translateX(250px); 
+      }
+
+}
+
+
+
