@@ -1,7 +1,11 @@
 {% extends "layout.html.twig" %} {% block content %}
 <link rel="stylesheet" type="text/css" href="{{ asset('css/items.css') }}">
-  <div class="modal">
-  </div>
+
+      <div class="box_description">
+        Hover or click an item for more info
+      </div>
+
+
       <ul class="itemlist">
         {% for item in itemsList %}
         <li class="itembox" id="item-{{item.id}}" data-toggle="modal" data-target="modal-item-{{item.id}}">
@@ -10,12 +14,9 @@
         {% endfor %}
       </ul>
 
-      <div class="box_description">
-        <p>
 
-        </p>
-      </div>
-    </div>
+
+
 
     <!-- The Modal -->
     <div id="itemModal" class="modal">
@@ -54,7 +55,7 @@
         };
       });
     }).mouseleave(function (e) {
-      $(".box_description").text("");
+      $(".box_description").text("Hover or click an item for more info");
     });
 
 

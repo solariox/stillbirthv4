@@ -1,6 +1,11 @@
-.main_content{
-  margin-left: 25%;
-  margin-right:25%;
+.box_description{
+  margin: auto;
+  width: 50%;
+  height: auto;
+  border: 1px solid white;
+  font-style: italic;
+  padding: 50px;
+  text-align: center;
 }
 
 .itembox {
@@ -8,9 +13,12 @@
 }
 
 .itemlist{
+  padding-top:20px; 
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin: auto;
+  width: 50%;
 }
 
 .itembox{
@@ -43,15 +51,7 @@
   transition: background-color 0.5s ease-out;
 }
 
-.box_description{
-  margin: auto;
-  width: 50%;
-  height: auto;
-  color: white;
-  width: 70%;
-  padding: 50px;
-  font-size: 3em;
-}
+
 
 /* The Modal (background) */
 .modal {
@@ -100,4 +100,12 @@
 #modal-img{
   height: auto;
   width: 50px;
+}
+
+
+/* Responsive*/
+@media only screen and ( max-width:970px){
+.box_description{
+  display:none;
+  }
 }

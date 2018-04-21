@@ -10,7 +10,10 @@ body {
     background-image: url('../img/background.png');
     background-attachment:fixed;
     background-position: left top;
-    position:absolute;
    background-size: 100%;
    color : white ;
+}
+
+.main_content{
+    padding-top: 50px;
 }
