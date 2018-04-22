@@ -21,7 +21,9 @@ $(function() {
     } )
 
     function showcaseUpdated( showcase ) {
-      var title = $('#item-title').html(
+      var title = $('#item-title');
+      console.log(showcase.nearestItem())
+      title.html(
         $(showcase.nearestItem()).attr( 'alt' )
       )
 

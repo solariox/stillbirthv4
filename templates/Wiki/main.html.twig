@@ -3,34 +3,70 @@
 <link rel="stylesheet" type="text/css" href="{{ asset('css/main_wiki.css') }}">
 
 
- <div class="section" id"section_boss">
-    <h3>This is our new boss</h3>
-    <p> we add those boss so you can have fun </p>
+<div class="section" id "section_boss">
+    <h3 class="section_name">This is our new boss</h3>
     <div id="wrap">
         <div id="showcase" class="noselect">
-        <img class="cloud9-item" src="{{ asset('img/boss/Ballon_Guppy.png') }}" alt=" Ballon_Guppy">
-        <img class="cloud9-item" src="{{ asset('img/boss/Ballon_Tigre.png') }}" alt="Ballon_Tigre">
-        <img class="cloud9-item" src="{{ asset('img/boss/Fatty_ours.png') }}" alt="Fatty_ours">
-        <img class="cloud9-item" src="{{ asset('img/boss/Lapin_Golbin.png') }}" alt="Lapin_Golbin">
-        <img class="cloud9-item" src="{{ asset('img/boss/Salade.png') }}" alt="Salade">
-        <img class="cloud9-item" src="{{ asset('img/boss/Zebre.png') }}" alt="Zebre"> </div>
-        <p id="item-title">&nbsp;</p>
-        <div class="nav" class="noselect">
-            <button class="left">  ← </button>
-            <button class="right"> → </button>
+            <img class="cloud9-item" src="{{ asset('img/boss/Ballon_Guppy.png') }}" alt=" Ballon_Guppy">
+            <img class="cloud9-item" src="{{ asset('img/boss/Ballon_Tigre.png') }}" alt="Ballon_Tigre">
+            <img class="cloud9-item" src="{{ asset('img/boss/Fatty_ours.png') }}" alt="Fatty_ours">
+            <img class="cloud9-item" src="{{ asset('img/boss/Lapin_Golbin.png') }}" alt="Lapin_Golbin">
+            <img class="cloud9-item" src="{{ asset('img/boss/Salade.png') }}" alt="Salade">
+            <img class="cloud9-item" src="{{ asset('img/boss/Zebre.png') }}" alt="Zebre">
         </div>
+        <p id="item-title">&nbsp;</p>
+        {#
+        <div class="nav" class="noselect">
+            <button class="left"> ← </button>
+            <button class="right"> → </button>
+        </div> #}
     </div>
-</div>
 
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <script src="{{ asset('js/cloud9carousel.js') }}"></script>
-        <script src="{{ asset('js/reflection.js') }}"></script>
-        <script src="{{ asset('js/carousel.js') }}"></script>
+    <hr>
 
+    <div class="section" id "section_boss">
+        <h3 class="section_name">Some Mechanics we added</h3>
+
+        <h4 class="subtitle">Curses and blessing<h4>
+        <p class="text"> Et eodem impetu Domitianum praecipitem per scalas itidem funibus constrinxerunt, 
+        eosque coniunctos per ampla spatia civitatis acri raptavere discursu.
+         iamque artuum et membrorum divulsa conpage superscandentes corpora mortuorum
+          ad ultimam truncata deformitatem velut exsaturati mox abiecerunt in flumen.
+        </p>
+
+        <h4 class="subtitle">New floor<h4>
+        <p class="text"> Et eodem impetu Domitianum praecipitem per scalas itidem funibus constrinxerunt, 
+        eosque coniunctos per ampla spatia civitatis acri raptavere discursu.
+         iamque artuum et membrorum divulsa conpage superscandentes corpora mortuorum
+          ad ultimam truncata deformitatem velut exsaturati mox abiecerunt in flumen.
+        </p>
+
+    </div>
+
+
+    <hr>
     
-    
-        <hr><hr>
+    <div class="section" id "section_boss">
+        <h3 class="section_name">Some new Challenge</h3>
 
+        <h4 class="subtitle">#35 Castlevanisaac<h4>
+        <p class="text"> Et eodem impetu Domitianum praecipitem per scalas itidem funibus constrinxerunt, 
+        eosque coniunctos per ampla spatia civitatis acri raptavere discursu.
+         iamque artuum et membrorum divulsa conpage superscandentes corpora mortuorum
+          ad ultimam truncata deformitatem velut exsaturati mox abiecerunt in flumen.
+        </p>
 
+        <h4 class="subtitle">#36 Pipicaca<h4>
+        <p class="text"> Et eodem impetu Domitianum praecipitem per scalas itidem funibus constrinxerunt, 
+        eosque coniunctos per ampla spatia civitatis acri raptavere discursu.
+         iamque artuum et membrorum divulsa conpage superscandentes corpora mortuorum
+          ad ultimam truncata deformitatem velut exsaturati mox abiecerunt in flumen.
+        </p>
+
+    </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="{{ asset('js/cloud9carousel.js') }}"></script>
+    <script src="{{ asset('js/carousel.js') }}"></script>
 
     {% endblock %}

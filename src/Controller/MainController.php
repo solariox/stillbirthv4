@@ -39,11 +39,11 @@ class MainController extends Controller
     }
 
     /**
-    * @Route("/contact", name="contact")
+    * @Route("/team", name="team")
     */
-    public function contactAction()
+    public function teamAction()
     {
-        return $this->render('contact.html.twig');
+        return $this->render('team.html.twig');
     }
 
     /**
