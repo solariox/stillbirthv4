@@ -1,0 +1,9 @@
+.main_content{
+    width: 50%;
+    margin:auto;
+    text-align:center
+}
+.person_name{
+    font-family: "IsaacScript";
+    font-size: 2em;
+}

@@ -5,6 +5,10 @@
     font-family: "Upheaval";
     src: url("../font/upheavtt.ttf") format("truetype");
 }
+@font-face {
+    font-family: "IsaacScript";
+    src: url("../font/IsaacScript2.ttf") format("truetype");
+}
 
 body {
     background-image: url('../img/background.png');
