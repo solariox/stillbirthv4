@@ -1,60 +1,63 @@
 <!doctype html>
 
 <html lang="fr">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-with; initial-scale=1.0; maximum scale=1.0">
   <title>Stillbirth</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-  <script
-    src="https://code.jquery.com/jquery-3.2.1.min.js"
-    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+   integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
     crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" 
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="  crossorigin="anonymous">
   </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" 
+  integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  
 
-  {#<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script> #}
-  <link rel="stylesheet" type="text/css" href="{{ asset('css/layout.css') }}">
-{#  <link rel="stylesheet" type="text/css" href="{{ asset('build/css/app.css') }}">#}
+  <link rel="stylesheet" type="text/css" href="{{ asset('css/layout.css') }}"> 
+  {# <link rel="stylesheet" type="text/css" href="{{ asset('build/css/app.css') }}">#}
 
 </head>
 
 <body>
-<div class="site_container">
-  <div class="site-pusher">
-    <header class="header">
-      <a href="#" class="header__icon" id="header__icon"></a>
-      <a class="logo" href="{{ path('home') }}"> <img src="{{ asset('img/stillbirthlogo.png') }}" alt="logo Stillbirth" /> </a>
-      <nav class="menu">
-        <a  href="{{ path('news') }}">
-          News
-        </a>
-        <span class="separator">&nbsp;</span>
+  <div class="site_container">
+    <div class="site-pusher">
+      <header class="header">
+        <a href="#" class="header__icon" id="header__icon"></a>
+        <a class="logo" href="{{ path('home') }}">
+          <img src="{{ asset('img/stillbirthlogo.png') }}" alt="logo Stillbirth" /> </a>
+        <nav class="menu">
+          <a href="{{ path('news') }}">
+            News
+          </a>
+          <span class="separator">&nbsp;</span>
 
-        <a  href="{{ path('contact') }}">
-          Contact
-        </a>
-        <span class="separator">&nbsp;</span>
+          <a href="{{ path('contact') }}">
+            Contact
+          </a>
+          <span class="separator">&nbsp;</span>
 
-        <a href="{{ path('items') }}">
-          Items
-        </a>
-        <span class="separator">&nbsp;</span>
+          <a href="{{ path('items') }}">
+            Items
+          </a>
+          <span class="separator">&nbsp;</span>
 
-        <a href="{{ path('wiki') }}">
-          Wiki
-        </a>
-        <span class="separator">&nbsp;</span>
-      </nav>
-    </header>
-    
+          <a href="{{ path('wiki') }}">
+            Wiki
+          </a>
+          <span class="separator">&nbsp;</span>
+        </nav>
+      </header>
 
 
-    <div class="main_content">
-    {% block content %}
-    {% endblock %}
+
+      <div class="main_content">
+        {% block content %} {% endblock %}
+      </div>
     </div>
   </div>
-</div>
 </body>
 
 </html>

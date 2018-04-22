@@ -1,0 +1,47 @@
+{% extends "layout.html.twig" %} {% block content %}
+
+
+<link rel="stylesheet" type="text/css" href="{{ asset('css/admin.css') }}">
+
+<div class="main_content">
+  <div class ="admin_menu">
+    <a class="btn btn-secondary" btn-sm href="{{ path('admin') }}"> Back to Admin Page</a>
+    <a class="btn btn-secondary" href="{{ path('admin/addNews') }}">Add a News</a>
+  </div>
+  <h1> All news </h1>
+  {%for new in news %}
+  <div class="news">
+    <h1>{{new.title}} </h1>
+    <a class="btn btn-primary btn-sm" href="#" role="button">View</a>
+    <a class="btn btn-danger btn-sm" href="#" role="button" data-toggle="modal" data-target="#confirmModal">Delete</a>
+  </div>
+</div>
+
+
+
+
+<!-- The Modal -->
+<div class="modal fade" id="confirmModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Are you sure to delet this new ? </h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <a class="btn btn-danger btn-sm" href="{{ path('admin/deleteNew', {'id': new.id}) }}" role="button" data-toggle="modal" data-target="#confirmModal">Yes</a>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+{%endfor%} {% endblock %}

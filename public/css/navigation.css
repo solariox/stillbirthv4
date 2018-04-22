@@ -126,14 +126,19 @@ height:100px;
 
     .menu a{
         display:block;
-        height: 80px;
-        line-height: 80px;
-
+        line-height:60px;
+        font-size: 1.5em;
 
         background-image: url("../img/bandal.svg");
         background-size:contain;
         background-repeat:no-repeat;
         background-position:center;
+        margin: 0;
+        
+    }
+    
+    .menu:first-child{
+        padding-top: 20px;
         
     }
 

@@ -21,7 +21,7 @@ use \Datetime;
 class AdminController extends Controller
 {
   /**
-  * @Route("/admin", name="welcome")
+  * @Route("/admin", name="admin")
   */
   public function AdminAction()
   {
@@ -69,6 +69,42 @@ class AdminController extends Controller
       'form' => $form->createView()
     ]);
   }
+
+
+
+  
+  /**
+  * @Route("/admin/seeNews", name="admin/seeNews")
+  */
+  public function seeNewsAction(Request $request)
+  {
+    $em = $this->getDoctrine()->getManager();
+    $news =  $em->getRepository(News::class)->findAll();
+
+    return $this->render('admin/adminNews.html.twig',array('news'=>$news));
+
+  }
+
+   
+  /**
+  * @Route("/admin/deleteNew/{id}", name="admin/deleteNew")
+  */
+  public function deleteNewsAction(Request $request, $id)
+  {
+    $em = $this->getDoctrine()->getManager();
+
+    $new =  $em->getRepository(News::class)->find($id);
+    $em->remove($new);
+    $em->flush();
+
+    $news =  $em->getRepository(News::class)->findAll();
+
+    return $this->redirectToRoute('admin/seeNews', array('news'=>$news));
+
+  }
+
+
+
 
 
   /**

@@ -6,6 +6,7 @@
   font-style: italic;
   padding: 50px;
   text-align: center;
+  font-size: 1.5em;
 }
 
 .itembox {
@@ -67,26 +68,53 @@
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
+
 /* Modal Content/Box */
 .modal-content {
   background-image: url('../img/modal.svg');
   background-repeat:no-repeat;
   background-color: transparent;
   background-size: 100% 100%;
-  display:flex;
-  flex-direction: row;
+
   margin: 15% auto; /* 15% from the top and centered */
   padding: 50px;
-  width: 500px; /* Could be more or less, depending on screen size */
-  max-width: 80%;
+  width: 50%; /* Could be more or less, depending on screen size */
+  max-width: 80%; 
   border:none;/*Bootstrap modal got native border*/
+
+  position: relative;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+
 }
+
+.modal-title{
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.modal-body{
+  display: flex;
+  align-items: center;
+}
+
+.modal-text{
+  font-family: 'Lucida Sans';
+  padding-left: 15px;
+  font-size: 1.5em;
+}
+
+/* Add Animation */
+@keyframes animatetop {
+  from {top: -300px; opacity: 0}
+  to {top: 0; opacity: 1}
+  }
 
 /* The Close Button */
 .close {
-  color: #aaa;
+  color: #FFF;
   float: right;
-  font-size: 28px;
+  font-size: 80px;
   font-weight: bold;
 }
 
@@ -98,8 +126,9 @@
 }
 
 #modal-img{
+  width: 20%;
   height: auto;
-  width: 50px;
+
 }
 
 

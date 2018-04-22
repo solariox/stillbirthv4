@@ -1,4 +1,5 @@
-{% extends "layout.html.twig" %} {% block content %}
+{% extends "layout.html.twig" %} 
+{% block content %}
 <link rel="stylesheet" type="text/css" href="{{ asset('css/items.css') }}">
 
       <div class="box_description">
@@ -22,15 +23,20 @@
     <div id="itemModal" class="modal">
       <!-- Modal content -->
       <div class="modal-content">
-        <span class="close">&times;</span>
-        <img id="modal-img" src="">
-        <p class="modal-text"></p>
-
+        <div class="modal-head">
+            <span class="close">&times;</span>
+            <h2 class="modal-title"></h2>
+        </div>
+        <div class="modal-body">
+          <img class =" pixel" id="modal-img" src="">
+          <p class=" modal-text"></p>
+        </div>
       </div>
+    </div>
     <!-- end of Modal -->
 
     <script>
-
+    //navigation
     (function($){
         $('#header__icon').click(function(e){
           e.preventDefault();
@@ -39,7 +45,7 @@
       })(jQuery);
     
 
-
+//##############Item list #################
     var itemList = {{itemJson|raw}};
 
     var modal = document.getElementById('itemModal');
@@ -65,6 +71,8 @@
     itemList.forEach(function (item) {
       if ("item-" + item.id == id) {
         $(".modal-text").text(item.description);
+        $('.modal-title').text(item.name);
+        $("#modal-img").attr("src","img/sprite/"+ item.img );
         modal.style.display = "block";
       };
     });
@@ -81,6 +89,6 @@
     }
 
 
-    </script>
+  </script>
 
     {% endblock %}
