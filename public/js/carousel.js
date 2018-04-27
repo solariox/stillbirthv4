@@ -22,9 +22,8 @@ $(function() {
 
     function showcaseUpdated( showcase ) {
       var title = $('#item-title');
-      console.log(showcase.nearestItem())
       title.html(
-        $(showcase.nearestItem()).attr( 'alt' )
+        $(showcase.nearestItem().element).attr( 'alt' )
       )
 
       var c = Math.cos((showcase.floatIndex() % 1) * 2 * Math.PI)

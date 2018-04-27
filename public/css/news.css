@@ -1,7 +1,4 @@
-.main_content{
-  margin-left: 25%;
-  margin-right:25%;
-}
+
 .news{
 
   text-align: center;
@@ -11,7 +8,7 @@
   background-size: 100% 100%;
   display:flex;
   flex-direction: column;
-  padding: 50px;
+  padding: 10%;
   border:none;/*Bootstrap modal got native border*/
 }
 
@@ -33,5 +30,10 @@
 
 
 @media only screen and ( max-width:970px){
-
+  .news{
+  padding: 10px;
+  background-image:none;
+  border: antiquewhite solid 3px; 
+  }
+  
 }

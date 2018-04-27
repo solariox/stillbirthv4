@@ -2,8 +2,11 @@
 {% block content %}
 <link rel="stylesheet" type="text/css" href="{{ asset('css/items.css') }}">
 
+
       <div class="box_description">
-        Hover or click an item for more info
+        <h2 class='item-title'></h2>
+        <p class='item-description'>Hover or click an item for more info </p>
+        <small class="found-in"></small>
       </div>
 
 
@@ -14,7 +17,6 @@
         </li>
         {% endfor %}
       </ul>
-
 
 
 
@@ -49,12 +51,14 @@
       itemList.forEach(function (item) {
         if ("item-" + item.id == id) {
 
-          $(".box_description").text(item.name);
-          $("#modal-img").attr("src","img/sprite/"+ item.img );
+
+          $(".item-title").text(item.name)
+          $(".item-description").text(item.description);
         };
       });
     }).mouseleave(function (e) {
-      $(".box_description").text("Hover or click an item for more info");
+      $(".item-description").text("Hover or click an item for more info");
+      $(".item-title").text("");
     });
 
 

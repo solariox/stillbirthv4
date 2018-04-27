@@ -3,6 +3,7 @@
 
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
+   preserveAspectRatio="none"
    xmlns:cc="http://creativecommons.org/ns#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
@@ -13,8 +14,6 @@
    id="Calque_1"
    x="0px"
    y="0px"
-   width="234.82542"
-   height="253.63277"
    viewBox="0 0 234.82542 253.63276"
    enable-background="new 0 0 340.16 340.16"
    xml:space="preserve"

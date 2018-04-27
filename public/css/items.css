@@ -1,11 +1,15 @@
 .box_description{
   margin: auto;
   width: 50%;
-  height: auto;
+  height: 40vh;
   border: 1px solid white;
   font-style: italic;
   padding: 50px;
   text-align: center;
+  font-size: 1.5em;
+}
+.item-description{
+  font-family: 'IsaacScript';
   font-size: 1.5em;
 }
 
@@ -20,6 +24,7 @@
   justify-content: space-around;
   margin: auto;
   width: 50%;
+  padding-left: 0;
 }
 
 .itembox{
@@ -71,7 +76,8 @@
 
 /* Modal Content/Box */
 .modal-content {
-  background-image: url('../img/modal.svg');
+/*background-image: url('../img/modal.svg');*/ 
+  background-image:url('../img/modal.svg#svgView(preserveAspectRatio(none slice))');
   background-repeat:no-repeat;
   background-color: transparent;
   background-size: 100% 100%;
@@ -137,4 +143,20 @@
 .box_description{
   display:none;
   }
+  .modal-content{
+    width: 90%;
+    max-width: 90%;
+  }
+  #modal-img{
+    display:none
+  }
+
+  .itemlist{
+    width: 100%;
+
+
+  }
+
+
+
 }

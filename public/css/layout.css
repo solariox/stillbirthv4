@@ -22,3 +22,24 @@ body {
 .main_content{
     padding-top: 50px;
 }
+
+
+/* Responsive*/
+@media only screen and ( max-width:970px){
+    body{
+      background-image:url('../img/background_index.jpg');
+      background-size:cover;
+      background-repeat:no-repeat;
+      background-position:center;
+      background-color: black
+      }
+    
+      .main_content{
+        min-height: 100%;
+        padding-left: 0;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto
+
+      }
+    }

@@ -72,12 +72,11 @@ height:100px;
     .site-pusher{
         transition-duration: 0.3s;
         transform:  translateX(0px);
-        height: 100%;
+        min-height: 100vh;
         
     }
 
     .main_content{
-        position: absolute;
         -webkit-overflow-scrolling: touch;
         top: 100px; /* La hauteur du header */
         right: 0;
@@ -117,7 +116,6 @@ height:100px;
         left: 0;
         width:200px;
         background-image: none;
-        background-color: black;
         padding-left: 0;
         transform: translateX(-250px); 
         transition-duration: 0.3s;
@@ -126,9 +124,9 @@ height:100px;
 
     .menu a{
         display:block;
-        line-height:60px;
+        line-height:73px;
         font-size: 1.5em;
-
+        height: 80px;
         background-image: url("../img/bandal.svg");
         background-size:contain;
         background-repeat:no-repeat;
