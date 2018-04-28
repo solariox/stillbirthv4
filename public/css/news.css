@@ -8,8 +8,10 @@
   background-size: 100% 100%;
   display:flex;
   flex-direction: column;
-  padding: 10%;
+  padding: 2%;
   border:none;/*Bootstrap modal got native border*/
+  margin-left: 25%;
+  margin-right: 25%;
 }
 
 .new-head{
@@ -23,9 +25,10 @@
 .new-body{
   font-family: 'Courier New', Courier, monospace;
   font-size: 1em;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
   padding-left: 20px;
   padding-right: 20px;
+
 }
 
 

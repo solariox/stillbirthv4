@@ -29,24 +29,23 @@
         <a class="logo" href="{{ path('home') }}">
           <img src="{{ asset('img/stillbirthlogo.png') }}" alt="logo Stillbirth" /> </a>
         <nav class="menu">
+          <a href="{{ path('items') }}">
+            Items
+          </a>
+          <span class="separator">&nbsp;</span>
           <a href="{{ path('news') }}">
             News
+          </a>
+          <span class="separator">&nbsp;</span>
+          <a href="{{ path('wiki') }}">
+            Wiki
           </a>
           <span class="separator">&nbsp;</span>
 
           <a href="{{ path('team') }}">
             Team
           </a>
-          <span class="separator">&nbsp;</span>
 
-          <a href="{{ path('items') }}">
-            Items
-          </a>
-          <span class="separator">&nbsp;</span>
-
-          <a href="{{ path('wiki') }}">
-            Wiki
-          </a>
           <span class="separator">&nbsp;</span>
         </nav>
       </header>
